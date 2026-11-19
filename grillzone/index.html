@@ -361,13 +361,6 @@ section.block{padding:clamp(88px,12vw,150px) 0 0}
 .split{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:15px}
 .split:first-of-type{border-top:0}
 .split b{white-space:nowrap}
-.pterms{margin-top:22px;font-size:15px;color:var(--smoke);line-height:1.7}
-.pterms b{color:var(--bone)}
-.pgroup{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
-.pgroup:first-of-type{margin-top:14px;padding-top:0;border-top:0}
-.ph{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-size:17px}
-.ph b.money{color:var(--grill);white-space:nowrap;font-family:var(--display);font-weight:600}
-.pnote{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--smoke)}
 .linkbtn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:700;font-size:15px;color:var(--grill);padding:8px 0;text-decoration:none}
 .linkbtn:hover{text-decoration:underline;text-underline-offset:4px}
 
@@ -721,27 +714,24 @@ footer.end .me a:not(.btn):hover{color:var(--bone)}
         <div class="price money"><span id="p1">7.000</span><small>MDL</small></div>
         <p class="was money" id="p1was" aria-live="polite"></p>
         <label class="switch"><input type="checkbox" id="sub6"><span class="tr"></span><span class="t" data-t="При ежемесячном сопровождении минимум на 6 месяцев&lt;small&gt;Тогда Шаг 1 стоит 6.000 MDL.&lt;/small&gt;">Cu administrare lunară pe cel puțin 6 luni<small>Pasul 1 costă atunci 6.000 MDL.</small></span></label>
-        <p class="pterms" data-t="&lt;b&gt;Срок:&lt;/b&gt; 7–10 рабочих дней с момента получения доступа.&lt;br&gt;&lt;b&gt;Оплата:&lt;/b&gt; 50% аванс, 50% при сдаче."><b>Termen:</b> 7–10 zile lucrătoare de la primirea accesului.<br><b>Plata:</b> 50% avans, 50% la predare.</p>
+        <div style="margin-top:26px">
+          <div class="split"><span data-t="Реорганизация бара">Reorganizarea barului</span><b class="money">6.000 MDL</b></div>
+          <div class="split"><span data-t="Исправления на остальном сайте">Reparații pe restul site-ului</span><b class="money">1.000 MDL</b></div>
+        </div>
         <button type="button" class="linkbtn" data-demo="barul" data-t="Посмотреть обновлённый бар в примере">Vezi barul reorganizat în exemplu</button>
       </div>
       <div class="panel">
-        <h3 data-t="Что входит в 7.000 MDL">Ce intră în 7.000 MDL</h3>
-        <div class="pgroup"><div class="ph"><b data-t="Реорганизация бара">Reorganizarea barului</b><b class="money">6.000 MDL</b></div>
+        <h3 data-t="Что вы получаете">Ce primiți</h3>
         <ul class="inc">
           <li><div data-t="Закреплённая панель категорий&lt;span&gt;Видна при прокрутке и сразу ведёт к кофе, пиву или винам.&lt;/span&gt;">Bară cu categorii fixă sus<span>Rămâne vizibilă la derulare și sare direct la cafea, bere sau vinuri.</span></div></li>
-          <li><div data-t="Восемь понятных категорий с заголовками&lt;span&gt;Коктейли, шоты, кофе и чай, прохладительные, пиво, вина, игристые, крепкие. Большой список без заголовка исчезает.&lt;/span&gt;">Opt categorii clare, cu titluri<span>Cocktailuri, Shoturi, Cafea și ceai, Răcoritoare, Bere, Vinuri, Spumante, Tării. Lista mare fără titlu dispare.</span></div></li>
+          <li><div data-t="Восемь понятных категорий&lt;span&gt;Коктейли, шоты, кофе и чай, прохладительные напитки, пиво, вина, игристые, крепкие напитки.&lt;/span&gt;">Opt categorii clare<span>Cocktailuri, Shoturi, Cafea și ceai, Răcoritoare, Bere, Vinuri, Spumante, Tării.</span></div></li>
           <li><div data-t="Коктейли по группам&lt;span&gt;Авторские, классические, сангрия, мохито, безалкогольные варианты отмечены.&lt;/span&gt;">Cocktailuri grupate<span>De autor, Clasice, Sangria, Mojito, cu variantele fără alcool marcate.</span></div></li>
           <li><div data-t="Все напитки на виду&lt;span&gt;Без «Load more», короткие списки по категориям.&lt;/span&gt;">Toate băuturile vizibile<span>Fără „Load more”, liste scurte pe categorii.</span></div></li>
-          <li><div data-t="Больше 200 карточек, проверенных по одной&lt;span&gt;Названия на румынском, объём указан одинаково, ошибки исправлены. Дубли остаются один раз, с ценой, подтверждённой вами.&lt;/span&gt;">Peste 200 de carduri verificate unul câte unul<span>Denumiri în română, volume scrise la fel, greșeli corectate. Dublurile rămân o singură dată, cu prețul confirmat de voi.</span></div></li>
-          <li><div data-t="Проверка и сдача&lt;span&gt;Проверяю на телефоне и компьютере, делаю пробный заказ через корзину и присылаю список всех изменений.&lt;/span&gt;">Test și predare<span>Verific pe telefon și pe calculator, fac o comandă de probă în coș și vă trimit lista cu tot ce am schimbat.</span></div></li>
-        </ul></div>
-        <div class="pgroup"><div class="ph"><b data-t="Исправления на остальном сайте">Reparații pe restul site-ului</b><b class="money">1.000 MDL</b></div>
-        <ul class="inc">
-          <li><div data-t="«Rezervare online» ведёт куда нужно&lt;span&gt;Кнопка ведёт к бронированию: к форме, если вы выберете её в опциях, или к номеру телефона для брони.&lt;/span&gt;">„Rezervare online” duce unde trebuie<span>Butonul duce la rezervare: la formular, dacă îl alegeți din opțiuni, sau la numărul de telefon pentru rezervări.</span></div></li>
-          <li><div data-t="«Livrare» и «Contacte» ведут каждая на своё место&lt;span&gt;«Contacte» ведёт сразу к адресу, телефону и карте, а не в начало меню.&lt;/span&gt;">„Livrare” și „Contacte” duc fiecare la locul lor<span>„Contacte” duce direct la adresă, telefon și hartă, nu la începutul meniului.</span></div></li>
+          <li><div data-t="Аккуратные тексты без дублей&lt;span&gt;Названия на румынском, объём везде указан одинаково, ошибки исправлены. Напитки, которые встречаются дважды, остаются один раз, с ценой, подтверждённой вами.&lt;/span&gt;">Texte curate, fără dubluri<span>Denumiri în română, volume scrise la fel peste tot, greșeli corectate. Băuturile care apar de două ori rămân o singură dată, cu prețul confirmat de voi.</span></div></li>
+          <li><div data-t="Кнопки ведут куда нужно&lt;span&gt;«Бронь» ведёт к бронированию, «Доставка» к доставке.&lt;/span&gt;">Butoane care duc unde trebuie<span>„Rezervare” duce la rezervare, „Livrare” la livrare.</span></div></li>
           <li><div data-t="Аллергены текстом&lt;span&gt;Обычный текст на румынском и русском вместо картинки: его можно прочитать, увеличить и скопировать на любом экране.&lt;/span&gt;">Alergenii ca text<span>Text normal în română și rusă în locul imaginii, care se poate citi, mări și copia pe orice ecran.</span></div></li>
-        </ul></div>
-        <p class="pnote" data-t="Сюда не входят: опции ниже (новые страницы, форма бронирования, русская версия) и ежемесячное сопровождение.">Nu intră aici: opțiunile de mai jos (pagini noi, formular de rezervare, versiune în rusă) și administrarea lunară.</p>
+          <li><div data-t="Финальная проверка&lt;span&gt;На телефоне и компьютере, плюс пробный заказ через корзину. Вы получаете список всех изменений.&lt;/span&gt;">Verificare finală<span>Pe telefon și pe calculator, plus o comandă de probă în coș. Primiți lista cu tot ce am schimbat.</span></div></li>
+        </ul>
       </div>
     </div>
   </div>
