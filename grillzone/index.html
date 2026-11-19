@@ -562,7 +562,7 @@ footer.end .me a:not(.btn):hover{color:var(--bone)}
             </nav>
             <div class="s-right">
               <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
-              <a class="s-call" href="tel:+37379199555">Sună</a>
+              <a class="s-call" href="tel:+37379199555" data-ru="Позвонить">Sună</a>
               <button type="button" class="burger" id="burger" aria-label="Deschide meniul" aria-expanded="false"><span></span></button>
             </div>
           </div>
@@ -590,28 +590,28 @@ footer.end .me a:not(.btn):hover{color:var(--bone)}
             <div class="allergen"><b data-ru="Аллергены.">Alergeni.</b> <span data-ru="Наши блюда могут содержать аллергены. Если у вас аллергия или непереносимость, скажите официанту.">Preparatele noastre pot conține alergeni. Dacă aveți alergii sau intoleranțe, spuneți-i chelnerului.</span></div>
             <div class="s-foot">
               <div><b>Grill Zone</b>or. Vadul lui Vodă, parcul Nistrean, Aleea Plajei</div>
-              <div><b data-ru="Часы работы">Program</b><span data-ru="Ресторан:">Restaurant:</span> <span class="tbd">[de completat]</span><br>Livrare: 10:00–20:00</div>
+              <div><b data-ru="Часы работы">Program</b><span data-ru="Ресторан:">Restaurant:</span> <span class="tbd" data-ru="[заполнить]">[de completat]</span><br><span data-ru="Доставка: 10:00–20:00">Livrare: 10:00–20:00</span></div>
               <div><b>+373 791 99 555</b>grillzonemd@gmail.com</div>
             </div>
           </div>
 
           <!-- BAR -->
           <div class="s-page" data-page="barul">
-            <div class="s-pad" style="padding-bottom:14px"><h2 class="s-h1">Barul</h2><p class="s-p">Cocktailuri de autor, vinuri moldovenești, bere la draft și cafea.</p></div>
+            <div class="s-pad" style="padding-bottom:14px"><h2 class="s-h1" data-ru="Бар">Barul</h2><p class="s-p" data-ru="Авторские коктейли, молдавские вина, разливное пиво и кофе.">Cocktailuri de autor, vinuri moldovenești, bere la draft și cafea.</p></div>
             <div class="s-tools">
               <div class="s-search">
-                <label><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="q" type="search" placeholder="Caută: mojito, Hennessy, latte" autocomplete="off" aria-label="Caută o băutură"></label>
-                <button type="button" class="na" id="na" aria-pressed="false">Fără alcool</button>
+                <label><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="q" type="search" placeholder="Caută: mojito, Hennessy, latte" data-ru-ph="Поиск: мохито, Hennessy, латте" autocomplete="off" aria-label="Caută o băutură"></label>
+                <button type="button" class="na" id="na" aria-pressed="false" data-ru="Без алкоголя">Fără alcool</button>
               </div>
               <div class="chips" id="barchips" role="group" aria-label="Categorii bar"></div>
             </div>
             <div id="barmenu"></div>
-            <div class="empty" id="barempty">Nu am găsit nimic. Încearcă alt cuvânt.</div>
+            <div class="empty" id="barempty" data-ru="Ничего не найдено. Попробуйте другое слово.">Nu am găsit nimic. Încearcă alt cuvânt.</div>
           </div>
 
           <!-- KITCHEN -->
           <div class="s-page" data-page="bucataria">
-            <div class="s-pad" style="padding-bottom:14px"><h2 class="s-h1">Bucătăria</h2><p class="s-p">Livrare 10:00–20:00, comandă de la 500 MDL.</p></div>
+            <div class="s-pad" style="padding-bottom:14px"><h2 class="s-h1" data-ru="Кухня">Bucătăria</h2><p class="s-p" data-ru="Доставка 10:00–20:00, заказ от 500 MDL.">Livrare 10:00–20:00, comandă de la 500 MDL.</p></div>
             <div class="s-tools"><div class="chips" id="kchips" role="group" aria-label="Categorii bucătărie"></div></div>
             <div id="kmenu"></div>
           </div>
@@ -619,67 +619,67 @@ footer.end .me a:not(.btn):hover{color:var(--bone)}
           <!-- RESERVATION -->
           <div class="s-page" data-page="rezervare">
             <div class="s-pad">
-              <h2 class="s-h1">Rezervă o masă sau un foișor</h2>
-              <p class="s-p">Completați formularul și vă sunăm pentru confirmare. În exemplu nu se trimite nimic.</p>
+              <h2 class="s-h1" data-ru="Забронировать столик или беседку">Rezervă o masă sau un foișor</h2>
+              <p class="s-p" data-ru="Заполните форму, и мы перезвоним для подтверждения. В примере ничего не отправляется.">Completați formularul și vă sunăm pentru confirmare. În exemplu nu se trimite nimic.</p>
               <form class="form" id="resform">
-                <div class="fld">Unde
+                <div class="fld"><span data-ru="Где">Unde</span>
                   <div class="where" id="where" role="group" aria-label="Unde">
-                    <button type="button" aria-pressed="true">Restaurant</button><button type="button" aria-pressed="false">Terasă</button><button type="button" aria-pressed="false">Foișor</button>
+                    <button type="button" aria-pressed="true" data-w="Restaurant" data-ru="Ресторан">Restaurant</button><button type="button" aria-pressed="false" data-w="Terasă" data-ru="Терраса">Terasă</button><button type="button" aria-pressed="false" data-w="Foișor" data-ru="Беседка">Foișor</button>
                   </div>
                 </div>
                 <div class="two">
-                  <label class="fld">Data<input type="date" id="rdate" required></label>
-                  <label class="fld">Ora<select id="rtime"></select></label>
+                  <label class="fld"><span data-ru="Дата">Data</span><input type="date" id="rdate" required></label>
+                  <label class="fld"><span data-ru="Время">Ora</span><select id="rtime"></select></label>
                 </div>
-                <div class="fld">Persoane
+                <div class="fld"><span data-ru="Гости">Persoane</span>
                   <div class="step"><button type="button" id="pminus" aria-label="Mai puține persoane">−</button><output id="pers">4</output><button type="button" id="pplus" aria-label="Mai multe persoane">+</button></div>
                 </div>
                 <div class="two">
-                  <label class="fld">Nume<input type="text" required placeholder="Numele dvs." autocomplete="name"></label>
-                  <label class="fld">Telefon<input type="tel" required placeholder="+373" autocomplete="tel"></label>
+                  <label class="fld"><span data-ru="Имя">Nume</span><input type="text" required placeholder="Numele dvs." data-ru-ph="Ваше имя" autocomplete="name"></label>
+                  <label class="fld"><span data-ru="Телефон">Telefon</span><input type="tel" required placeholder="+373" autocomplete="tel"></label>
                 </div>
-                <label class="fld">Mesaj (opțional)<textarea placeholder="Zi de naștere, scaun pentru copil, meniu dinainte"></textarea></label>
-                <button class="btn btn-main" type="submit" style="justify-self:start">Trimite cererea de rezervare</button>
+                <label class="fld"><span data-ru="Сообщение (необязательно)">Mesaj (opțional)</span><textarea placeholder="Zi de naștere, scaun pentru copil, meniu dinainte" data-ru-ph="День рождения, детский стул, меню заранее"></textarea></label>
+                <button class="btn btn-main" type="submit" style="justify-self:start" data-ru="Отправить заявку на бронь">Trimite cererea de rezervare</button>
               </form>
-              <div class="ok" id="resok" role="status"><h3>Cererea a fost trimisă</h3><p class="s-p" id="ressum"></p><p class="s-p">Cererea ajunge pe e-mail sau pe Telegram, iar restaurantul vă sună pentru confirmare.</p></div>
+              <div class="ok" id="resok" role="status"><h3 data-ru="Заявка отправлена">Cererea a fost trimisă</h3><p class="s-p" id="ressum"></p><p class="s-p" data-ru="Заявка приходит на e-mail или в Telegram, и ресторан перезванивает для подтверждения.">Cererea ajunge pe e-mail sau pe Telegram, iar restaurantul vă sună pentru confirmare.</p></div>
             </div>
           </div>
 
           <!-- GAZEBO -->
           <div class="s-page" data-page="foisoare">
-            <div class="s-pad"><h2 class="s-h1">Foișoare pe malul Nistrului</h2><p class="s-p">Foișoare în aer liber pentru 12 sau 24 de persoane și un foișor acoperit pentru până la 30, cu bucătărie proprie și grătar. Potrivite pentru zile de naștere, cumetrii, banchete și evenimente de firmă.</p></div>
+            <div class="s-pad"><h2 class="s-h1" data-ru="Беседки на берегу Днестра">Foișoare pe malul Nistrului</h2><p class="s-p" data-ru="Беседки под открытым небом на 12 или 24 человека и крытая беседка до 30 человек, со своей кухней и грилем. Подходят для дней рождения, крестин, банкетов и корпоративов.">Foișoare în aer liber pentru 12 sau 24 de persoane și un foișor acoperit pentru până la 30, cu bucătărie proprie și grătar. Potrivite pentru zile de naștere, cumetrii, banchete și evenimente de firmă.</p></div>
             <div class="gal" aria-label="Fotografii foișor"><img data-img="foi4" alt="Foișorul văzut din parc"><img data-img="foi3" alt="Masă festivă în foișor"><img data-img="foi1" alt="Bucătăria din foișor"><img data-img="foi2" alt="Foișorul pe malul Nistrului"></div>
             <div class="s-pad" style="padding-top:8px">
               <div class="facts">
-                <div class="fact"><b>12 persoane</b>700 lei luni–joi<br>900 lei vineri–duminică</div>
-                <div class="fact"><b>24 de persoane</b>1.000 lei luni–joi<br>1.200 lei vineri–duminică</div>
-                <div class="fact"><b>Acoperit, 30 de persoane</b><span class="tbd">[preț de completat]</span></div>
-                <div class="fact"><b>Toată ziua</b><span class="tbd">[10:00–23:00 sau 00:00]</span></div>
+                <div class="fact" data-ru="&lt;b&gt;12 человек&lt;/b&gt;700 лей пн–чт&lt;br&gt;900 лей пт–вс"><b>12 persoane</b>700 lei luni–joi<br>900 lei vineri–duminică</div>
+                <div class="fact" data-ru="&lt;b&gt;24 человека&lt;/b&gt;1.000 лей пн–чт&lt;br&gt;1.200 лей пт–вс"><b>24 de persoane</b>1.000 lei luni–joi<br>1.200 lei vineri–duminică</div>
+                <div class="fact" data-ru="&lt;b&gt;Крытая, 30 человек&lt;/b&gt;&lt;span class=&quot;tbd&quot;&gt;[цену уточнить]&lt;/span&gt;"><b>Acoperit, 30 de persoane</b><span class="tbd">[preț de completat]</span></div>
+                <div class="fact" data-ru="&lt;b&gt;Весь день&lt;/b&gt;&lt;span class=&quot;tbd&quot;&gt;[10:00–23:00 или 00:00]&lt;/span&gt;"><b>Toată ziua</b><span class="tbd">[10:00–23:00 sau 00:00]</span></div>
               </div>
-              <p class="s-p" style="margin-top:14px">Inclus: apă, frigider, prize, grătar și ace, disc pentru gătit, loc de joacă pentru copii, parcare păzită. Prețurile sunt cele de pe site-ul de azi.</p>
-              <div class="s-ctas"><button type="button" class="btn btn-main" data-go="rezervare" data-where="Foișor">Rezervă foișorul</button><a class="btn btn-ghost" href="tel:+37379199555">Sună: 079 199 555</a></div>
+              <p class="s-p" style="margin-top:14px" data-ru="Включено: вода, холодильник, розетки, гриль и шампуры, диск для готовки, детская площадка, охраняемая парковка. Цены взяты с нынешнего сайта.">Inclus: apă, frigider, prize, grătar și ace, disc pentru gătit, loc de joacă pentru copii, parcare păzită. Prețurile sunt cele de pe site-ul de azi.</p>
+              <div class="s-ctas"><button type="button" class="btn btn-main" data-go="rezervare" data-where="Foișor" data-ru="Забронировать беседку">Rezervă foișorul</button><a class="btn btn-ghost" href="tel:+37379199555" data-ru="Позвонить: 079 199 555">Sună: 079 199 555</a></div>
             </div>
           </div>
 
           <!-- DELIVERY & CONTACTS -->
           <div class="s-page" data-page="livrare">
             <div class="s-pad">
-              <h2 class="s-h1">Livrare și contacte</h2>
+              <h2 class="s-h1" data-ru="Доставка и контакты">Livrare și contacte</h2>
               <div class="dc">
-                <div class="box"><h3>Livrare</h3>
-                  <dl class="kv"><dt>Program</dt><dd>10:00–20:00</dd><dt>Comandă minimă</dt><dd>500 MDL</dd><dt>Zona</dt><dd class="tbd">[de completat]</dd><dt>Timp</dt><dd class="tbd">[de completat]</dd><dt>Plata</dt><dd class="tbd">[numerar / card]</dd></dl>
-                  <div class="s-ctas"><button type="button" class="btn btn-main" data-go="bucataria">Vezi meniul și comandă</button></div>
+                <div class="box"><h3 data-ru="Доставка">Livrare</h3>
+                  <dl class="kv"><dt data-ru="Часы">Program</dt><dd>10:00–20:00</dd><dt data-ru="Минимальный заказ">Comandă minimă</dt><dd>500 MDL</dd><dt data-ru="Зона">Zona</dt><dd class="tbd" data-ru="[заполнить]">[de completat]</dd><dt data-ru="Время">Timp</dt><dd class="tbd" data-ru="[заполнить]">[de completat]</dd><dt data-ru="Оплата">Plata</dt><dd class="tbd" data-ru="[наличные / карта]">[numerar / card]</dd></dl>
+                  <div class="s-ctas"><button type="button" class="btn btn-main" data-go="bucataria" data-ru="Открыть меню и заказать">Vezi meniul și comandă</button></div>
                 </div>
-                <div class="box"><h3>Program</h3>
-                  <dl class="kv"><dt>Restaurant</dt><dd class="tbd">[de completat]</dd><dt>Foișoare</dt><dd class="tbd">[10:00–23:00 sau 00:00]</dd><dt>Livrare</dt><dd>10:00–20:00</dd><dt>Telefon</dt><dd><a href="tel:+37379199555">+373 791 99 555</a></dd><dt>E-mail</dt><dd>grillzonemd@gmail.com</dd></dl>
+                <div class="box"><h3 data-ru="Часы работы">Program</h3>
+                  <dl class="kv"><dt data-ru="Ресторан">Restaurant</dt><dd class="tbd" data-ru="[заполнить]">[de completat]</dd><dt data-ru="Беседки">Foișoare</dt><dd class="tbd" data-ru="[10:00–23:00 или 00:00]">[10:00–23:00 sau 00:00]</dd><dt data-ru="Доставка">Livrare</dt><dd>10:00–20:00</dd><dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37379199555">+373 791 99 555</a></dd><dt>E-mail</dt><dd>grillzonemd@gmail.com</dd></dl>
                 </div>
               </div>
-              <div class="box" style="margin-top:12px"><h3>Cum ajungeți</h3><p class="s-p" style="margin-top:0">or. Vadul lui Vodă, parcul Nistrean, Aleea Plajei</p>
+              <div class="box" style="margin-top:12px"><h3 data-ru="Как добраться">Cum ajungeți</h3><p class="s-p" style="margin-top:0">or. Vadul lui Vodă, parcul Nistrean, Aleea Plajei</p>
                 <div class="map" aria-hidden="true">
                   <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice"><defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#22261e" stroke-width="1"/></pattern></defs><rect width="400" height="220" fill="url(#g)"/><path d="M-10 170 C 60 150, 110 190, 180 160 S 300 90, 410 110" fill="none" stroke="#24405a" stroke-width="22" stroke-linecap="round"/><path d="M-10 170 C 60 150, 110 190, 180 160 S 300 90, 410 110" fill="none" stroke="#2f5675" stroke-width="10" stroke-linecap="round"/><path d="M40 0 L 120 220 M 0 60 L 400 40 M 260 0 L 230 120" stroke="#2e3329" stroke-width="5" fill="none"/><text x="300" y="138" fill="#4f7a9c" font-size="12" font-family="Manrope">Nistru</text></svg>
                   <span class="pin"><i></i></span>
                 </div>
-                <a class="linkbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Grill+Zone+Vadul+lui+Voda" target="_blank" rel="noopener">Deschide în Google Maps</a>
+                <a class="linkbtn" href="https://www.google.com/maps/search/?api=1&amp;query=Grill+Zone+Vadul+lui+Voda" target="_blank" rel="noopener" data-ru="Открыть в Google Maps">Deschide în Google Maps</a>
               </div>
             </div>
           </div>
@@ -693,10 +693,10 @@ footer.end .me a:not(.btn):hover{color:var(--bone)}
             <button type="button" class="go" data-go="foisoare" style="--k:3" data-ru="Беседки">Foișoare</button>
             <button type="button" class="go" data-go="rezervare" style="--k:4" data-ru="Бронь">Rezervare</button>
             <button type="button" class="go" data-go="livrare" style="--k:5" data-ru="Доставка и контакты">Livrare și contacte</button>
-            <p class="meta">+373 791 99 555<br>Livrare 10:00–20:00</p>
+            <p class="meta">+373 791 99 555<br><span data-ru="Доставка 10:00–20:00">Livrare 10:00–20:00</span></p>
           </div>
           <i class="homebar" aria-hidden="true"></i>
-          <div class="cartbar" id="cartbar" aria-live="polite"><div class="s"><span id="ctxt">0 produse</span><small id="csum">0 MDL</small></div><button type="button">Vezi coșul</button></div>
+          <div class="cartbar" id="cartbar" aria-live="polite"><div class="s"><span id="ctxt">0 produse</span><small id="csum">0 MDL</small></div><button type="button" data-ru="Открыть корзину">Vezi coșul</button></div>
         </div>
       </div>
     </div>
@@ -1004,13 +1004,17 @@ function closeMenu(){ smenu.classList.remove('open'); smenu.setAttribute('aria-h
 burger.addEventListener('click', openMenu); $('#mclose').addEventListener('click', closeMenu);
 device.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 /* language (demo of RU option) */
-$$('[data-ru]').forEach(el => el.dataset.ro = el.textContent);
-$$('.lang button').forEach(b => b.addEventListener('click', () => {
-  lang = b.dataset.lang;
-  $$('.lang button').forEach(x => x.setAttribute('aria-pressed', x === b));
-  $$('[data-ru]').forEach(el => el.textContent = el.dataset[lang]);
+$$('[data-ru]').forEach(el => el.dataset.ro = el.innerHTML);
+$$('[data-ru-ph]').forEach(el => el.dataset.roPh = el.placeholder);
+function setDemoLang(l){
+  lang = l;
+  $$('.lang button').forEach(x => x.setAttribute('aria-pressed', x.dataset.lang === l));
+  $$('[data-ru]').forEach(el => { el.innerHTML = l === 'ru' ? el.dataset.ru : el.dataset.ro; });
+  $$('[data-ru-ph]').forEach(el => { el.placeholder = l === 'ru' ? el.dataset.ruPh : el.dataset.roPh; });
+  if (window.__demoReady) { renderBar(); renderKitchen(); renderCart(); }
   placeInd();
-}));
+}
+$$('.lang button').forEach(b => b.addEventListener('click', () => setDemoLang(b.dataset.lang)));
 /* open demo from outside */
 function showDemo(p, extra){
   go(p);
@@ -1022,13 +1026,18 @@ document.addEventListener('click', e => { const b = e.target.closest('[data-demo
 /* ---------- cart ---------- */
 const cart = {n:0, sum:0};
 function addToCart(btn, price){
-  cart.n++; cart.sum += price;
-  $('#ctxt').textContent = cart.n + (cart.n === 1 ? ' produs în coș' : ' produse în coș');
-  $('#csum').textContent = fmt(cart.sum) + ' MDL' + (cart.sum < 500 ? ' · livrare de la 500 MDL' : '');
+  cart.n++; cart.sum += price; renderCart();
   $('#cartbar').classList.add('show');
   btn.classList.add('pop'); setTimeout(() => btn.classList.remove('pop'), 180);
 }
 screen.addEventListener('click', e => { const b = e.target.closest('.add, .var'); if (b) addToCart(b, +b.dataset.p); });
+const TD = (ro, ru) => lang === 'ru' ? ru : ro;
+const ruN = (n, a, b, c) => { const m10 = n % 10, m100 = n % 100; return m10 === 1 && m100 !== 11 ? a : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? b : c); };
+function renderCart(){
+  if (!cart.n) return;
+  $('#ctxt').textContent = cart.n + ' ' + TD(cart.n === 1 ? 'produs în coș' : 'produse în coș', ruN(cart.n, 'товар в корзине', 'товара в корзине', 'товаров в корзине'));
+  $('#csum').textContent = fmt(cart.sum) + ' MDL' + (cart.sum < 500 ? TD(' · livrare de la 500 MDL', ' · доставка от 500 MDL') : '');
+}
 
 /* ---------- BAR MENU ---------- */
 const MENU = [
@@ -1066,25 +1075,35 @@ const MENU = [
  {id:'inghetata', t:'Înghețată', g:[{i:[['Înghețată','la alegere',[['1 bilă',25],['2 bile',50],['3 bile',75]],'na']]}]}
 ];
 let onlyNA = false, query = '';
+const CAT_RU = {cocktailuri:'Коктейли', shoturi:'Шоты', cafea:'Кофе и чай', racoritoare:'Прохладительные', bere:'Пиво', vinuri:'Вина', spumante:'Игристые', tarii:'Крепкие напитки', inghetata:'Мороженое'};
+const NOTE_RU = {vinuri:'Бутылки по 750 мл, если не указано иное.', tarii:'Цена за 40 мл.'};
+const W_RU = {'De autor':'Авторские','Clasice':'Классические','Sangria':'Сангрия','Mojito':'Мохито','Cafea':'Кофе','Alte băuturi calde':'Другие горячие напитки','Ceai':'Чай','Fresh':'Фреши','Sucuri și energizante':'Соки и энергетики','Apă':'Вода','La draft, 500 ml':'Разливное, 500 мл','La sticlă':'В бутылках','Fără alcool':'Безалкогольное','La bere':'К пиву','La pahar, 150 ml':'По бокалам, 150 мл','Roșu':'Красные','Alb':'Белые','Roze':'Розовые','Vodcă':'Водка','Divin și coniac':'Дивин и коньяк','Whisky':'Виски','Gin, rom, tequila':'Джин, ром, текила','Lichioruri și aperitive':'Ликёры и аперитивы',
+  'Mojito fără alcool':'Мохито безалкогольный','Aloe Mojito fără alcool':'Aloe Mojito безалкогольный','Berry Mojito fără alcool':'Berry Mojito безалкогольный','Cappuccino vegan':'Капучино веган','Matcha vegan':'Матча веган','Ciocolată caldă':'Горячий шоколад','Ceai infuzie':'Чай','Home Tea, 500 ml':'Домашний чай, 500 мл','Fresh de portocale':'Апельсиновый фреш','Fresh de grepfrut':'Грейпфрутовый фреш','Suc Vita':'Сок Vita','Cvas':'Квас','Arahide':'Арахис','Fistic':'Фисташки','Bernard Light sau Dark':'Bernard Light или Dark','Hortița':'Хортица','Bardar 5 ani':'Bardar 5 лет','Bardar 7 ani':'Bardar 7 лет','Bardar 10 ani':'Bardar 10 лет','Glenmorangie Original 10 ani':'Glenmorangie Original 10 лет','Glenfiddich 12 ani':'Glenfiddich 12 лет',"Glenmorangie Nectar d'Or 12 ani":"Glenmorangie Nectar d'Or 12 лет",'Vișinată, corn sau zmeură':'Наливка: вишня, кизил или малина','Înghețată':'Мороженое',
+  'lapte vegetal':'растительное молоко','cu whisky':'с виски','cătină, coacăză neagră, gutui cu kiwi și ghimbir, vișină cu migdale, zmeură cu melisă':'облепиха, чёрная смородина, айва с киви и имбирём, вишня с миндалём, малина с мелиссой','filtrată sau nefiltrată':'фильтрованное или нефильтрованное','filtrată':'фильтрованное','alb':'белое','roze':'розовое','roșu':'красное','sec':'сухое','dulce':'сладкое','demidulce':'полусладкое','demisec':'полусухое','brut':'брют','alb sau roze':'белое или розовое','de casă':'домашняя','la alegere':'на выбор','gin':'джин','tequila':'текила','Blanca, Spiced sau Black':'Blanca, Spiced или Black',
+  'standard':'стандарт','dublu':'двойной','1 bilă':'1 шарик','2 bile':'2 шарика','3 bile':'3 шарика'};
+const units = x => x.replace(/(\d) ml\b/g, '$1 мл').replace(/(\d) l\b/g, '$1 л').replace(/(\d) g\b/g, '$1 г').replace(/(\d) kg\b/g, '$1 кг');
+const tw = x => { if (lang !== 'ru' || !x) return x; if (W_RU[x]) return W_RU[x]; return units(x.split(', ').map(t => W_RU[t] || t).join(', ')); };
 const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-const itemHTML = ([n, sub, p, flag]) => {
+const itemHTML = ([n0, sub0, p, flag]) => {
+  const n = tw(n0), sub = tw(sub0);
   const right = Array.isArray(p)
-    ? `<div class="vars">${p.map(([v, x]) => `<button type="button" class="var" data-p="${x}" aria-label="Adaugă ${esc(n)}, ${esc(v)}, ${x} MDL">${esc(v)}<span>${x} MDL</span></button>`).join('')}</div>`
-    : `<div class="pr money">${p}<small>MDL</small></div><button type="button" class="add" data-p="${p}" aria-label="Adaugă ${esc(n)} în coș">+</button>`;
-  return `<div class="it"><div class="nm">${esc(n)}${flag === 'new' ? '<i class="badge">Nou</i>' : ''}${sub ? `<span>${esc(sub)}</span>` : ''}</div>${right}</div>`;
+    ? `<div class="vars">${p.map(([v, x]) => `<button type="button" class="var" data-p="${x}" aria-label="${esc(n)}, ${esc(tw(v))}, ${x} MDL">${esc(tw(v))}<span>${x} MDL</span></button>`).join('')}</div>`
+    : `<div class="pr money">${p}<small>MDL</small></div><button type="button" class="add" data-p="${p}" aria-label="${TD('Adaugă în coș', 'Добавить в корзину')}: ${esc(n)}">+</button>`;
+  return `<div class="it"><div class="nm">${esc(n)}${flag === 'new' ? `<i class="badge">${TD('Nou', 'Новинка')}</i>` : ''}${sub ? `<span>${esc(sub)}</span>` : ''}</div>${right}</div>`;
 };
 function renderBar(){
   let html = '', chips = '', total = 0;
   for (const c of MENU) {
     let body = '', n = 0;
     for (const g of c.g) {
-      const items = g.i.filter(it => (!onlyNA || it[3] === 'na') && (!query || norm(it[0] + ' ' + it[1]).includes(query)));
+      const items = g.i.filter(it => (!onlyNA || it[3] === 'na') && (!query || norm(it[0] + ' ' + it[1] + ' ' + (W_RU[it[0]] || '')).includes(query)));
       if (!items.length) continue; n += items.length;
-      body += `<div class="grp">${g.t ? `<h4>${esc(g.t)}</h4>` : ''}<div class="list">${items.map(itemHTML).join('')}</div></div>`;
+      body += `<div class="grp">${g.t ? `<h4>${esc(tw(g.t))}</h4>` : ''}<div class="list">${items.map(itemHTML).join('')}</div></div>`;
     }
     if (!n) continue; total += n;
-    html += `<section class="cat" id="b-${c.id}"><h3>${esc(c.t)} <small>${n} ${n === 1 ? 'poziție' : 'poziții'}</small></h3>${c.note ? `<p class="note">${esc(c.note)}</p>` : ''}${body}</section>`;
-    chips += `<button type="button" class="chip" data-t="b-${c.id}">${esc(c.t)}<small>${n}</small></button>`;
+    const ct = TD(c.t, CAT_RU[c.id]);
+    html += `<section class="cat" id="b-${c.id}"><h3>${esc(ct)} <small>${n} ${TD(n === 1 ? 'poziție' : 'poziții', ruN(n, 'позиция', 'позиции', 'позиций'))}</small></h3>${c.note ? `<p class="note">${esc(TD(c.note, NOTE_RU[c.id]))}</p>` : ''}${body}</section>`;
+    chips += `<button type="button" class="chip" data-t="b-${c.id}">${esc(ct)}<small>${n}</small></button>`;
   }
   $('#barmenu').innerHTML = html; $('#barchips').innerHTML = chips;
   $('#barempty').style.display = total ? 'none' : 'block';
@@ -1121,13 +1140,18 @@ const KITCHEN = [
   {id:'speciale', t:'De împărțit', i:[['dish7','Ramură de miel orientală','Корзинка баранины','1 kg',900],['dish10','Sadj cu vițel și legume, 4 persoane','Мясо на садже на 4 персоны','1400 g',650],['dish9','Rulouri de miel cu nuci','Рулетики из баранины с орехами','350/250 g',360]]},
   {id:'pilafuri', t:'Pilafuri și bucate calde', i:[['plov','Plov uzbec','Плов по-узбекски','400/120 g',165],['dolma','Dolma','Долма','350 g',140]]}
 ];
-(() => {
-  $('#kchips').innerHTML = KITCHEN.map(c => `<button type="button" class="chip" data-t="k-${c.id}">${esc(c.t)}<small>${c.i.length}</small></button>`).join('');
-  $('#kmenu').innerHTML = KITCHEN.map(c => `<section class="cat" id="k-${c.id}"><h3>${esc(c.t)}</h3><div class="kgrid">${c.i.map(([img, n, ru, w, p]) =>
-    `<article class="kc"><img src="${IMG[img]}" alt="${esc(n)}" loading="lazy"><div class="b"><span class="n">${esc(n)}</span><span class="ru">${esc(ru)}, ${w}</span><div class="f"><span class="pr money">${p}<small>MDL</small></span><button type="button" class="add" data-p="${p}" aria-label="Adaugă ${esc(n)} în coș">+</button></div></div></article>`).join('')}</div></section>`).join('');
-  $('#popular').innerHTML = [['dish2','Frigărui de miel',250],['dish4','Pui Tabaka',240],['plov','Plov uzbec',165],['dish7','Ramură de miel orientală',900],['dolma','Dolma',140]]
-    .map(([k, n, p]) => `<button type="button" class="dcard" data-go="bucataria"><img src="${IMG[k]}" alt="" loading="lazy"><div>${n}<b>${p} MDL</b></div></button>`).join('');
-})();
+const KCAT_RU = {gratar:'Гриль', speciale:'Для компании', pilafuri:'Пловы и горячие блюда'};
+function renderKitchen(){
+  const ru = lang === 'ru';
+  $('#kchips').innerHTML = KITCHEN.map(c => `<button type="button" class="chip" data-t="k-${c.id}">${esc(ru ? KCAT_RU[c.id] : c.t)}<small>${c.i.length}</small></button>`).join('');
+  $('#kmenu').innerHTML = KITCHEN.map(c => `<section class="cat" id="k-${c.id}"><h3>${esc(ru ? KCAT_RU[c.id] : c.t)}</h3><div class="kgrid">${c.i.map(([img, roN, ruN2, w, p]) => {
+    const main = ru ? ruN2 : roN, second = ru ? roN : ruN2, wt = ru ? units(w) : w;
+    return `<article class="kc"><img src="${IMG[img]}" alt="${esc(main)}" loading="lazy"><div class="b"><span class="n">${esc(main)}</span><span class="ru">${esc(second)}, ${wt}</span><div class="f"><span class="pr money">${p}<small>MDL</small></span><button type="button" class="add" data-p="${p}" aria-label="${TD('Adaugă în coș', 'Добавить в корзину')}: ${esc(main)}">+</button></div></div></article>`; }).join('')}</div></section>`).join('');
+  $('#popular').innerHTML = [['dish2','Frigărui de miel','Шашлык из баранины',250],['dish4','Pui Tabaka','Цыплёнок табака',240],['plov','Plov uzbec','Плов по-узбекски',165],['dish7','Ramură de miel orientală','Корзинка баранины',900],['dolma','Dolma','Долма',140]]
+    .map(([k, roN, ruN2, p]) => `<button type="button" class="dcard" data-go="bucataria"><img src="${IMG[k]}" alt="" loading="lazy"><div>${ru ? ruN2 : roN}<b>${p} MDL</b></div></button>`).join('');
+  if (page === 'bucataria') spyK();
+}
+renderKitchen();
 
 /* ---------- RESERVATION ---------- */
 (() => {
@@ -1137,18 +1161,18 @@ const KITCHEN = [
   let pers = 4; const out = $('#pers');
   $('#pminus').onclick = () => { pers = Math.max(1, pers - 1); out.textContent = pers; };
   $('#pplus').onclick = () => { pers = Math.min(30, pers + 1); out.textContent = pers; };
-  $('#where').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setWhere(b.textContent); });
+  $('#where').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setWhere(b.dataset.w); });
   $('#resform').addEventListener('submit', e => {
     e.preventDefault();
     const where = $('#where [aria-pressed="true"]').textContent;
-    const dt = new Date($('#rdate').value + 'T12:00').toLocaleDateString('ro-RO', {weekday:'long', day:'numeric', month:'long'});
-    $('#ressum').textContent = `${where}, ${dt}, ora ${t.value}, ${pers} ${pers === 1 ? 'persoană' : 'persoane'}.`;
+    const dt = new Date($('#rdate').value + 'T12:00').toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'ro-RO', {weekday:'long', day:'numeric', month:'long'});
+    $('#ressum').textContent = lang === 'ru' ? `${where}, ${dt}, в ${t.value}, ${pers} ${ruN(pers, 'гость', 'гостя', 'гостей')}.` : `${where}, ${dt}, ora ${t.value}, ${pers} ${pers === 1 ? 'persoană' : 'persoane'}.`;
     $('#resform').style.display = 'none'; $('#resok').classList.add('show');
     screen.scrollTo({top: Math.max(0, $('#resok').offsetTop - 140), behavior: reduce ? 'auto' : 'smooth'});
     setTimeout(() => { $('#resform').style.display = ''; $('#resok').classList.remove('show'); }, 9000);
   });
 })();
-function setWhere(w){ $$('#where button').forEach(b => b.setAttribute('aria-pressed', b.textContent === w)); }
+function setWhere(w){ $$('#where button').forEach(b => b.setAttribute('aria-pressed', b.dataset.w === w)); }
 
 /* ================= STAGE 1 ================= */
 function countTo(el, to, suf = ''){
@@ -1257,6 +1281,7 @@ reqs.value = store.get('gz-reqs', 8); reqs.addEventListener('input', renderPlans
 
 /* init */
 renderBar(); go('barul'); placePill();
+window.__demoReady = true;
 /* offer language */
 $$('[data-t]').forEach(el => el._ro = el.innerHTML);
 function setOfferLang(l, byUser){
